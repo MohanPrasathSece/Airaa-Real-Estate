@@ -25,17 +25,13 @@ export function Header() {
       <div
         className={`flex w-full max-w-4xl items-center justify-between gap-6 rounded-full border border-white/30 px-6 py-3 transition-all duration-300 ${
           scrolled
-            ? "bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(138,112,92,0.15)]"
+            ? "bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(197,160,89,0.15)]"
             : "bg-white/30 backdrop-blur-lg shadow-[0_4px_24px_0_rgba(0,0,0,0.06)]"
         }`}
       >
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center gap-2 shrink-0">
-          <img src={logo} alt="Airaa Real Estate" className="h-8 w-8 rounded-full object-cover" />
-          <div className="leading-tight">
-            <div className="font-display text-sm font-bold text-charcoal tracking-wide">AIRAA</div>
-            <div className="text-[8px] uppercase tracking-[0.2em] text-muted-foreground">Real Estate</div>
-          </div>
+        <Link to="/" className="flex items-center shrink-0">
+          <img src={logo} alt="Airaa Real Estate" className="h-12 w-12 rounded-full object-cover" />
         </Link>
 
         {/* Desktop Navigation */}

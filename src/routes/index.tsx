@@ -104,7 +104,7 @@ function Hero() {
             Trusted experts in buying, selling, construction, documentation, and civil engineering consultation — delivering luxury homes with complete legal clarity.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#properties" className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-[0_15px_40px_-15px_rgba(138,112,92,0.7)] transition-all hover:bg-brand-hover hover:shadow-[0_20px_50px_-15px_rgba(109,84,67,0.7)]">
+            <a href="#properties" className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-[0_15px_40px_-15px_rgba(197,160,89,0.7)] transition-all hover:bg-brand-hover hover:shadow-[0_20px_50px_-15px_rgba(165,128,57,0.7)]">
               Explore Properties <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-charcoal/15 bg-white/70 px-6 py-3.5 text-sm font-semibold text-charcoal backdrop-blur transition-colors hover:border-charcoal/40">
@@ -180,7 +180,7 @@ function Services() {
           <motion.div
             key={s.title}
             variants={fadeUp}
-            className="group relative overflow-hidden rounded-3xl border border-hairline bg-white p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-brand/30 hover:shadow-[0_30px_60px_-25px_rgba(138,112,92,0.25)]"
+            className="group relative overflow-hidden rounded-3xl border border-hairline bg-white p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-brand/30 hover:shadow-[0_30px_60px_-25px_rgba(197,160,89,0.25)]"
           >
             <div className="grid h-12 w-12 place-items-center rounded-2xl bg-soft text-brand transition-colors group-hover:bg-brand group-hover:text-white">
               <s.icon className="h-6 w-6" />
@@ -280,7 +280,7 @@ function CTA() {
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-            <a href="tel:+919788121526" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-4 text-sm font-semibold text-white shadow-[0_20px_50px_-15px_rgba(138,112,92,0.8)] hover:bg-brand-hover">
+            <a href="tel:+919788121526" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-4 text-sm font-semibold text-white shadow-[0_20px_50px_-15px_rgba(197,160,89,0.8)] hover:bg-brand-hover">
               <Phone className="h-4 w-4" /> Call 97881 21526
             </a>
             <Link to="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-4 text-sm font-semibold text-charcoal hover:bg-white/90">
