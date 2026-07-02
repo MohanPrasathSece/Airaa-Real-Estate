@@ -73,8 +73,8 @@ function IndexPage() {
       <Header />
       <main>
         <Hero />
-        <Services />
         <Properties />
+        <Services />
         <CTA />
       </main>
       <Footer />
