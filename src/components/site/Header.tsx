@@ -21,67 +21,71 @@ export function Header() {
   }, []);
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/80 backdrop-blur-xl border-b border-hairline shadow-[0_2px_20px_-8px_rgba(0,0,0,0.08)]"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-5 py-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <img src={logo} alt="Airaa Real Estate" className="h-10 w-10 rounded-md object-cover" />
+    <header className="fixed inset-x-0 top-5 z-50 flex flex-col items-center px-4">
+      <div
+        className={`flex w-full max-w-4xl items-center justify-between gap-6 rounded-full border border-white/30 px-6 py-3 transition-all duration-300 ${
+          scrolled
+            ? "bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(138,112,92,0.15)]"
+            : "bg-white/30 backdrop-blur-lg shadow-[0_4px_24px_0_rgba(0,0,0,0.06)]"
+        }`}
+      >
+        {/* Brand Logo */}
+        <Link to="/" className="flex items-center gap-2 shrink-0">
+          <img src={logo} alt="Airaa Real Estate" className="h-8 w-8 rounded-full object-cover" />
           <div className="leading-tight">
-            <div className="font-display text-lg font-bold text-charcoal tracking-wide">AIRAA</div>
-            <div className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Real Estate</div>
+            <div className="font-display text-sm font-bold text-charcoal tracking-wide">AIRAA</div>
+            <div className="text-[8px] uppercase tracking-[0.2em] text-muted-foreground">Real Estate</div>
           </div>
         </Link>
 
-        <nav className="hidden lg:flex items-center justify-center gap-7 text-sm font-semibold text-charcoal/85">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-charcoal/85">
           {nav.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="relative transition-colors hover:text-brand after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-brand after:transition-all hover:after:w-full"
+              className="transition-colors hover:text-brand"
             >
               {item.label}
             </a>
           ))}
           <Link
             to="/contact"
-            className="relative transition-colors hover:text-brand after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-brand after:transition-all hover:after:w-full"
+            className="transition-colors hover:text-brand"
           >
             Contact
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2 justify-self-end">
+        {/* Action Button & Toggle */}
+        <div className="flex items-center gap-2">
           <a
             href="tel:+919788121526"
-            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2.5 text-sm font-semibold text-white shadow-[0_10px_30px_-12px_rgba(138,112,92,0.6)] transition-all hover:bg-brand-hover hover:shadow-[0_14px_34px_-10px_rgba(109,84,67,0.6)]"
+            className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-xs font-semibold text-white transition-all hover:bg-brand-hover shadow-sm"
           >
-            <Phone className="h-4 w-4" />
+            <Phone className="h-3 w-3" />
             Call Now
           </a>
           <button
             aria-label="Toggle menu"
-            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-hairline bg-white/80"
+            className="md:hidden inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/40"
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
         </div>
       </div>
 
+      {/* Mobile Drawer (Glassmorphic) */}
       {open && (
-        <div className="lg:hidden border-t border-hairline bg-white animate-in fade-in slide-in-from-top-2">
-          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4">
+        <div className="mt-2 w-full max-w-4xl overflow-hidden rounded-3xl border border-white/20 bg-white/70 backdrop-blur-xl p-4 shadow-lg md:hidden animate-in fade-in slide-in-from-top-2">
+          <div className="flex flex-col gap-1">
             {nav.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-charcoal hover:bg-soft"
+                className="rounded-xl px-3 py-2 text-sm font-semibold text-charcoal hover:bg-white/40"
               >
                 {item.label}
               </a>
@@ -89,15 +93,15 @@ export function Header() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="rounded-lg px-3 py-2.5 text-sm font-medium text-charcoal hover:bg-soft"
+              className="rounded-xl px-3 py-2 text-sm font-semibold text-charcoal hover:bg-white/40"
             >
               Contact
             </Link>
             <a
               href="tel:+919788121526"
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-4 py-3 text-sm font-semibold text-white"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-4 py-2.5 text-xs font-semibold text-white"
             >
-              <Phone className="h-4 w-4" /> Call 97881 21526
+              <Phone className="h-3.5 w-3.5" /> Call 97881 21526
             </a>
           </div>
         </div>
