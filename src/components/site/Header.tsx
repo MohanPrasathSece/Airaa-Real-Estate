@@ -23,15 +23,15 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-5 z-50 flex flex-col items-center px-4">
       <div
-        className={`flex w-full max-w-4xl items-center justify-between gap-6 rounded-full border border-white/30 px-6 py-3 transition-all duration-300 ${
+        className={`flex w-full max-w-4xl items-center justify-between gap-6 rounded-full border border-white/30 px-6 py-1.5 transition-all duration-300 ${
           scrolled
             ? "bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(197,160,89,0.15)]"
             : "bg-white/30 backdrop-blur-lg shadow-[0_4px_24px_0_rgba(0,0,0,0.06)]"
         }`}
       >
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center shrink-0">
-          <img src={logo} alt="Airaa Real Estate" className="h-12 w-12 rounded-full object-cover" />
+        <Link to="/" className="flex items-center shrink-0 -my-2.5">
+          <img src={logo} alt="Airaa Real Estate" className="h-16 w-16 rounded-full object-cover shadow-md border-2 border-white/60 bg-white" />
         </Link>
 
         {/* Desktop Navigation */}
