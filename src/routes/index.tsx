@@ -33,17 +33,17 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 
-import hero from "@/assets/hero-pool-villa.png";
-import p1 from "@/assets/property-1.jpg";
-import p2 from "@/assets/property-2.jpg";
-import p3 from "@/assets/property-3.jpg";
-import p4 from "@/assets/property-4.jpg";
-import p5 from "@/assets/property-5.jpg";
-import p6 from "@/assets/property-6.jpg";
-import familyKeys from "@/assets/family-keys.jpg";
-import construction from "@/assets/construction.jpg";
-import ctaVilla from "@/assets/cta-villa.jpg";
-import whyImg from "@/assets/why-choose.jpg";
+import hero from "@/assets/hero-pool-villa.webp";
+import p1 from "@/assets/property-1.webp";
+import p2 from "@/assets/property-2.webp";
+import p3 from "@/assets/property-3.webp";
+import p4 from "@/assets/property-4.webp";
+import p5 from "@/assets/property-5.webp";
+import p6 from "@/assets/property-6.webp";
+import familyKeys from "@/assets/family-keys.webp";
+import construction from "@/assets/construction.webp";
+import ctaVilla from "@/assets/cta-villa.webp";
+import whyImg from "@/assets/why-choose.webp";
 
 export const Route = createFileRoute("/")({
   component: IndexPage,
