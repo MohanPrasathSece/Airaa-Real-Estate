@@ -26,8 +26,8 @@ export function Header() {
         className={`flex w-full max-w-4xl items-center justify-between gap-6 rounded-full border border-hairline px-6 py-1.5 transition-all duration-300 bg-white shadow-[0_8px_32px_0_rgba(197,160,89,0.12)]`}
       >
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center shrink-0 -my-1.5">
-          <img src={logo} alt="Airaa Real Estate" className="h-14 w-14 rounded-full object-cover shadow-md border-2 border-white/60 bg-transparent mix-blend-multiply" />
+        <Link to="/" className="flex items-center shrink-0">
+          <img src={logo} alt="Airaa Real Estate" className="h-12 object-contain mix-blend-multiply" />
         </Link>
 
         {/* Desktop Navigation */}
