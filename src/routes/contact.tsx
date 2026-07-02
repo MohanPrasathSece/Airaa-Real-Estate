@@ -20,11 +20,11 @@ function ContactPage() {
         <section className="mx-auto max-w-7xl px-5 pb-16 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Get in touch
+              <span className="h-1.5 w-1.5 rounded-full bg-brand" /> Contact Airaa Real Estate
             </span>
             <h1 className="mt-5 font-display text-5xl font-bold text-charcoal sm:text-6xl">Let's find your next address</h1>
             <p className="mt-4 max-w-xl text-muted-foreground">
-              Whether you're buying, selling, or building — our team is ready to help. Send a message and we'll get back within one business day.
+              Whether you're buying, selling, or building — Airaa Real Estate is ready to help. Send a message and we'll get back within one business day.
             </p>
           </motion.div>
         </section>

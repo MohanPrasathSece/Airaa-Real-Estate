@@ -95,13 +95,13 @@ function Hero() {
 
       <div className="mx-auto grid max-w-7xl gap-14 px-5 pt-10 pb-24 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:px-8 lg:pt-16">
         <motion.div initial="hidden" animate="show" variants={fadeUp}>
-          <Eyebrow>Premium Real Estate · Tamil Nadu</Eyebrow>
+          <Eyebrow>Airaa Real Estate · Tamil Nadu</Eyebrow>
           <h1 className="mt-5 font-display text-5xl font-bold leading-[1.05] text-charcoal sm:text-6xl lg:text-7xl">
             Find Your Dream Property with{" "}
-            <span className="text-brand italic">Confidence</span>
+            <span className="text-brand italic">Airaa Real Estate</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Trusted experts in buying, selling, construction, documentation, and civil engineering consultation — delivering luxury homes with complete legal clarity.
+            Airaa Real Estate: Trusted experts in buying, selling, construction, documentation, and civil engineering consultation — delivering luxury homes with complete legal clarity.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a href="#properties" className="group inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 text-sm font-semibold text-white shadow-[0_15px_40px_-15px_rgba(197,160,89,0.7)] transition-all hover:bg-brand-hover hover:shadow-[0_20px_50px_-15px_rgba(165,128,57,0.7)]">
@@ -162,7 +162,7 @@ function Services() {
       <div className="mx-auto max-w-3xl text-center">
         <Eyebrow>What We Do</Eyebrow>
         <h2 className="mt-4 font-display text-4xl font-bold text-charcoal sm:text-5xl text-balance">
-          Comprehensive real estate services under one trusted roof
+          Comprehensive Airaa Real Estate services under one trusted roof
         </h2>
         <p className="mt-4 text-muted-foreground">
           From your first site visit to key handover — we take care of every detail with clarity and care.
@@ -212,7 +212,7 @@ function Properties() {
         <div className="max-w-2xl">
           <Eyebrow>Featured Listings</Eyebrow>
           <h2 className="mt-4 font-display text-4xl font-bold text-charcoal sm:text-5xl">
-            Handpicked properties, ready for the perfect owner
+            Handpicked properties by Airaa Real Estate
           </h2>
         </div>
         <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-hover">
@@ -273,10 +273,10 @@ function CTA() {
               <span className="h-1.5 w-1.5 rounded-full bg-white" /> Take the next step
             </span>
             <h2 className="mt-5 font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
-              Ready to buy or sell your dream property?
+              Ready to buy or sell with Airaa Real Estate?
             </h2>
             <p className="mt-4 max-w-lg text-white/80">
-              Talk to our advisors today — no obligation, just clear guidance and honest options.
+              Talk to Airaa Real Estate advisors today — no obligation, just clear guidance and honest options.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
