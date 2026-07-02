@@ -36,18 +36,20 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-charcoal">Quick Links</h4>
           <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            {["Home", "Services", "Properties", "About", "Testimonials", "FAQ"].map((l) => (
-              <li key={l}><a href={`#${l.toLowerCase()}`} className="hover:text-brand">{l}</a></li>
-            ))}
+            <li><Link to="/" className="hover:text-brand">Home</Link></li>
+            <li><a href="#services" className="hover:text-brand">Services</a></li>
+            <li><a href="#properties" className="hover:text-brand">Properties</a></li>
+            <li><Link to="/contact" className="hover:text-brand">Contact</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-charcoal">Services</h4>
           <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            {["Home Buying", "Home Selling", "Construction", "Civil Engineering", "Documentation", "Property Valuation"].map((l) => (
-              <li key={l}><span className="hover:text-brand cursor-default">{l}</span></li>
-            ))}
+            <li><span className="hover:text-brand cursor-default">Real Estate Sales</span></li>
+            <li><span className="hover:text-brand cursor-default">Quality Construction</span></li>
+            <li><span className="hover:text-brand cursor-default">Legal Documentation</span></li>
+            <li><span className="hover:text-brand cursor-default">Civil Consultation</span></li>
           </ul>
         </div>
 

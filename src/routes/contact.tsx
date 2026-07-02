@@ -7,16 +7,6 @@ import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Airaa Real Estate" },
-      { name: "description", content: "Reach Airaa Real Estate in Kinathukadavu, Tamil Nadu. Call 97881 21526 for buying, selling, construction, or documentation." },
-      { property: "og:title", content: "Contact Airaa Real Estate" },
-      { property: "og:description", content: "Get in touch with our trusted property, construction and documentation team." },
-      { property: "og:url", content: "/contact" },
-    ],
-    links: [{ rel: "canonical", href: "/contact" }],
-  }),
   component: ContactPage,
 });
 
