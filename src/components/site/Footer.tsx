@@ -71,7 +71,10 @@ export function Footer() {
       <div className="border-t border-hairline">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-5 text-xs text-muted-foreground sm:flex-row lg:px-8">
           <p>© {new Date().getFullYear()} Airaa Real Estate. All rights reserved.</p>
-          <p>Crafted with care in Kinathukadavu, Tamil Nadu.</p>
+          <div className="flex flex-col items-center gap-1 sm:items-end">
+            <p>Crafted with care in Kinathukadavu, Tamil Nadu.</p>
+            <p className="text-[10px] uppercase tracking-wider text-muted-foreground/80">Developed by <span className="font-semibold text-brand">Zyra Digitals</span></p>
+          </div>
         </div>
       </div>
     </footer>
