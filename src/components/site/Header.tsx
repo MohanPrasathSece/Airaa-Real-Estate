@@ -27,7 +27,7 @@ export function Header() {
       >
         {/* Brand Logo */}
         <Link to="/" className="flex items-center shrink-0">
-          <img src={logo} alt="Airaa Real Estate" className="h-12 object-contain mix-blend-multiply" />
+          <img src={logo} alt="Airaa Real Estate" className="h-8 object-contain mix-blend-multiply" />
         </Link>
 
         {/* Desktop Navigation */}
